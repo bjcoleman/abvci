@@ -10,6 +10,6 @@ node
     }
     stage('Static Analysis')
     {
-        sh 'pylint'
+        sh 'pylint src/abvci/*.py tests/*.py'
     }
 }
