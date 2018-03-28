@@ -8,4 +8,8 @@ node
     {
         sh 'tox'
     }
+    stage('Static Analysis')
+    {
+        sh 'pylint'
+    }
 }
